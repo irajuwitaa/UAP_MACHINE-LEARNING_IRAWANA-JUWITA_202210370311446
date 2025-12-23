@@ -20,8 +20,9 @@
    - [Perbandingan Performa](#-perbandingan-performa)  
    - [Confusion Matrix & Error Analysis](#-confusion-matrix--error-analysis)  
 5. [Demo Streamlit](#-demo-streamlit)  
-6. [Keterbatasan](#-keterbatasan)  
-7. [Kontributor](#-kontributor)  
+6. [Keterbatasan](#-keterbatasan)
+7. [Link Live Demo](#-link-live-demo)  
+8. [Kontributor](#-kontributor) 
 
 ---
 
@@ -144,11 +145,11 @@ Kriteria pemilihan:
 ## 🏆 Hasil Evaluasi & Analisis
 ### 📌 Perbandingan Performa
 
-| Model | Akurasi (Test) | Catatan |
-|------|----------------:|--------|
-| CNN Scratch | **66.62%** | Baseline; error tinggi pada kelas mirip (khususnya **tulip ↔ rose** dan **daisy → dandelion**) |
-| MobileNetV2 (Freeze) | **89.31%** | Performa tinggi dan efisien; masih terlihat kebingungan **rose ↔ tulip** |
-| EfficientNetB0 (FT2) | **92.35%** | **Terbaik**; error paling sedikit dan lebih merata antar kelas, indikasi generalisasi lebih baik |
+| Model | Akurasi (Test) | Hasil Analisis |
+|------|----------------:|----------------|
+| CNN Scratch | **66.62%** | Baseline. Error tinggi pada kelas mirip (khususnya **tulip ↔ rose** dan **daisy → dandelion**) |
+| MobileNetV2 (Freeze) | **89.31%** | Performa tinggi dan efisien. Masih terlihat kebingungan pada **rose ↔ tulip** |
+| EfficientNetB0 (FT2) | **92.35%** | **Terbaik**. Error paling sedikit dan lebih merata antar kelas, indikasi generalisasi lebih baik |
 
 ---
 
@@ -201,6 +202,11 @@ Berikut beberapa keterbatasan yang ditemukan pada proyek klasifikasi bunga ini:
    - gambar blur / tidak fokus
    - background terlalu ramai (daun/rumput dominan)
    - objek bunga terlalu kecil di frame
+
+## 🔗 Link Live Demo
+
+Aplikasi Streamlit dapat diakses publik melalui link berikut:
+- **Live Demo:** https://uapmlira.streamlit.app/
 
 ## 👥 Kontributor
 
