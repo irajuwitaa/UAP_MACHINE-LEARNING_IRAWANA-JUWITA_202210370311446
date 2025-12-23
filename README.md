@@ -19,10 +19,11 @@
 4. [Hasil Evaluasi & Analisis](#-hasil-evaluasi--analisis)  
    - [Perbandingan Performa](#-perbandingan-performa)  
    - [Confusion Matrix & Error Analysis](#-confusion-matrix--error-analysis)  
-5. [Demo Streamlit](#-demo-streamlit)  
-6. [Keterbatasan](#-keterbatasan)
-7. [Link Live Demo](#-link-live-demo)  
-8. [Kontributor](#-kontributor) 
+5. [Demo Streamlit](#-demo-streamlit)
+6. [Panduan Menjalankan Sistem Website Secara Lokal](#-panduan-menjalankan-sistem-website-secara-lokal)  
+7. [Keterbatasan](#-keterbatasan)
+8. [Link Live Demo](#-link-live-demo)  
+9. [Kontributor](#-kontributor) 
 
 ---
 
@@ -73,8 +74,7 @@ flowers/
 
 Bagian ini menjelaskan alur eksperimen dari eksplorasi data sampai pemilihan model terbaik.  
 Notebook utama:
-- `notebooks/01_training.ipynb` (training)
-- `notebooks/02_evaluation.ipynb` (evaluasi)
+- `notebooks/UAP ML_Irawana Juwita_202210370311446.ipynb` (training)
 
 ---
 
@@ -187,6 +187,36 @@ Alur penggunaan:
    - **Top-3 probabilitas** (kelas kandidat teratas)
 4. Prediksi otomatis tersimpan pada **history** (terbaru di atas).
 5. User dapat menghapus riwayat dengan tombol **Hapus History**.
+
+## 💻 Panduan Menjalankan Sistem Website Secara Lokal
+
+Bagian ini menjelaskan cara menjalankan aplikasi **Streamlit** pada komputer lokal.
+
+### ✅ Prasyarat
+- **Python 3.10 – 3.12** (disarankan 3.12)
+- Koneksi internet (untuk install dependency pertama kali)
+
+### 1) Clone projek dan buka projek
+Jika sudah ada folder project di laptop:
+### 2) Buat & aktifkan virtual environment
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+### 3) Install dependencies
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+### 4) Pastikan file model tersedia
+Pastikan struktur minimal berikut ada:
+src/app.py
+models/scratch_cnn.keras
+models/mobilenetv2.keras
+models/effnetb0.keras
+requirements.txt
+### 5) Jalankan Streamlit
+python -m streamlit run src/app.py
+### 6) Buka aplikasi
+Streamlit akan menampilkan URL seperti:
+http://localhost:8501
+Buka link tersebut di browser.
 
 ## ⚠️ Keterbatasan
 
