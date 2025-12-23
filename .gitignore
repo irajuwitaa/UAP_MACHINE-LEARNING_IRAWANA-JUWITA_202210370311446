@@ -1,0 +1,46 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# ===== Virtual env =====
+.venv/
+venv/
+ENV/
+env/
+
+# ===== Jupyter / IPython =====
+.ipynb_checkpoints/
+.profile_default/
+
+# ===== Caches / Tools =====
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.cache/
+.pdm-python
+.pdm.toml
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Data =====
+data/
+dataset/
+datasets/
+data_raw/
+data_split/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# ===== Logs =====
+*.log
