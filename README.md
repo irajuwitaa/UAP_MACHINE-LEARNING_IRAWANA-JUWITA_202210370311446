@@ -197,25 +197,31 @@ Bagian ini menjelaskan cara menjalankan aplikasi **Streamlit** pada komputer lok
 - Koneksi internet (untuk install dependency pertama kali)
 
 ### 1) Clone projek dan buka projek
-Jika sudah ada folder project di laptop:
+'git clone https://github.com/USERNAME/NAMA_REPO.git'
+'cd NAMA_REPO'
+
 ### 2) Buat & aktifkan virtual environment
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+'python -m venv .venv'
+'.\.venv\Scripts\Activate.ps1'
+
 ### 3) Install dependencies
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+'python -m pip install --upgrade pip'
+'python -m pip install -r requirements.txt'
+
 ### 4) Pastikan file model tersedia
 Pastikan struktur minimal berikut ada:
-src/app.py
-models/scratch_cnn.keras
-models/mobilenetv2.keras
-models/effnetb0.keras
-requirements.txt
+'src/app.py'
+'models/scratch_cnn.keras'
+'models/mobilenetv2.keras'
+'models/effnetb0.keras'
+'requirements.txt'
+
 ### 5) Jalankan Streamlit
-python -m streamlit run src/app.py
+'python -m streamlit run src/app.py'
+
 ### 6) Buka aplikasi
 Streamlit akan menampilkan URL seperti:
-http://localhost:8501
+'http://localhost:8501'
 Buka link tersebut di browser.
 
 ## ⚠️ Keterbatasan
